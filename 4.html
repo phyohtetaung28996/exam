@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+
+<p id="show"></p>
+<input type="number" name="" id="first"><br><br>
+<input type="number" name="" id="second"><br><br>
+<input type="button" name="" onclick="myfun()" value="click"><br>
+<script type="text/javascript">
+
+         
+		function myfun() {
+			var first=parseInt(document.getElementById('first').value);
+			var second=parseInt(document.getElementById('second').value);
+			
+			var ans = first + second;
+			
+			document.getElementById('show').textContent=ans;
+		}
+		
+				
+	</script>
+</body>
+
+</html>

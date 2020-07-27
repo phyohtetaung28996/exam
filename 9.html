@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#html").click(function(){
+    $("#txthtml").toggle();
+  });
+   $("#css").click(function(){
+    $("#txtcss").toggle();
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="html">Hide HTML</button>
+<button id="css">Hide CSS</button>
+
+<p id="txthtml">HTML</p>
+<p id="txtcss">CSS</p>
+
+</body>
+</html>

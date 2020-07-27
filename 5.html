@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+
+function goal(){
+
+	var red=parseInt(document.getElementById('red').value);
+  
+	var white=parseInt(document.getElementById('white').value);
+
+
+	if (red>white){
+
+	document.getElementById('result').textContent=' red team get 3 Points and white team get 0 Point';
+	
+	}
+	else if (red<white){
+	document.getElementById('result').textContent='whit team get 3 Points and red team got 0 Point';
+	}
+	else
+	{
+		document.getElementById('result').textContent='They are get 1 point because draw';
+	}
+}
+</script>
+
+</head>
+<body>
+Red Team<input type="number" name="" id="red"><br><br>
+White Team<input type="number" name="" id="white"><br><br>
+<input type="submit" name="" onclick="goal()"> <br><br>
+<p id="result"></p>
+</body>
+</html>
